@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    font-family: Playfair, Display;
+    margin: 0;
+    padding: 0;
+    color: #1a1a1a;
+    background-color: #fff;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 700;
+  }
+  
+  h1 {
+    margin: -1.5rem;
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  p {
+    margin: 0.5rem 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .fieldandfeastlogo {
+    background-color: #1F2A44;
+    color: white;
+    text-align: center;
+    margin: auto;
+    align-items: stretch;
+  }
+  
+  .logo {
+    width: 30px;
+    margin-bottom: 0.3rem;
+  }
+  
+  .logoline {
+    font-style: italic;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: -0.5rem;
+  }
+
+  .navbar {
+    background-color: #E5C185;
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+    padding: 5px;
+    max-width: 3000px;
+    margin: auto;
+    align-items: stretch;
+  }
+  
+  .navbar a {
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 1.3rem;
+  }
+  
+  /* Content */
+  .content {
+    padding: 1rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .card.green {
+    background-color: #c8d7b0;
+    padding: 1rem;
+    border-radius: 4px;
+  }
+  
+  /* Gallery Section */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .gallery-item p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 0.3rem;
+  }
+  
+  .gallery-btn {
+    background-color: #e7c385;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    margin: 1rem auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .footer a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #1a1a1a;
+  }
+  
