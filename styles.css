@@ -1,136 +1,258 @@
+/* Akmaral Kurbanova */
+
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
+/* CSS RESET */
 body {
-    font-family: Playfair, Display;
     margin: 0;
     padding: 0;
+}
+
+
+/* GLOBAL STYLES*/
+body {
+    font-family: 'Playfair Display', serif;
     color: #1a1a1a;
     background-color: #fff;
     line-height: 1.6;
-  }
-  
-  h1, h2, h3 {
-    font-weight: 700;
-  }
-  
-  h1 {
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+h1 {
     margin: -1.5rem;
     font-size: 6rem;
-  }
-  
-  h2 {
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
-  
-  p {
-    margin: 0.5rem 0;
-  }
-  
-  a {
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #1F2A44;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: -0.5rem;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+}
+
+a {
     text-decoration: none;
     color: inherit;
-  }
-  
-  .fieldandfeastlogo {
+}
+
+/* Header & Navigation */
+.fieldandfeastlogo {
     background-color: #1F2A44;
     color: white;
     text-align: center;
     margin: auto;
     align-items: stretch;
-  }
-  
-  .logo {
-    width: 30px;
+}
+
+.logo {
+    width: 20px;
     margin-bottom: 0.3rem;
-  }
-  
-  .logoline {
+}
+
+.logoline {
     font-style: italic;
     font-size: 1.8rem;
     margin-bottom: 1rem;
     margin-top: -0.5rem;
-  }
+}
 
-  .navbar {
+.navbar {
     background-color: #E5C185;
     display: flex;
     justify-content: center;
     gap: 30rem;
-    padding: 5px;
-    max-width: 3000px;
     margin: auto;
     align-items: stretch;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     font-weight: bold;
-    color: #1a1a1a;
-    font-size: 1.3rem;
-  }
-  
-  /* Content */
-  .content {
+    color: #1F2A44;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    margin-top: 1rem;
+}
+
+/* Main Content */
+.content {
     padding: 1rem 2rem;
     max-width: 1000px;
     margin: auto;
-  }
-  
-  /* Cards */
-  .cards {
+    color: #1F2A44;
+}
+
+.intro {
+    border-bottom: 2px solid #E5C185;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.cards {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .card.green {
-    background-color: #c8d7b0;
+    gap: 1.5rem;
+}
+
+/* Cards */
+.first.green.card,
+.second.green.card,
+.third.green.card {
+    background-color: #76885B;
+    padding: 0.8rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.first.green.card,
+.second.green.card {
+    width: 480px;
+    height: 120px;
+}
+
+.third.green.card {
     padding: 1rem;
-    border-radius: 4px;
-  }
-  
-  /* Gallery Section */
-  .gallery-grid {
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    grid-column: span 2;
+}
+
+.first.green.card h3,
+.second.green.card h3,
+.third.green.card h3 {
+    color: #FAF9F6;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: -0.5rem;
+}
+
+.first.green.card p,
+.second.green.card p,
+.third.green.card p {
+    color: #FAF9F6;
+}
+
+.third.green.card li {
+    color: #FAF9F6;
+    font-size: 1.2rem;
+}
+
+.offerings {
+    border-bottom: 2px solid #E5C185;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Gallery */
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
-  }
-  
-  .gallery-item img {
+    border: 2px solid #F8F4EC;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
-  }
-  
-  .gallery-item p {
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card-img {
+    width: 100%;
+    display: block;
+}
+
+.gallery-item p {
     font-size: 0.9rem;
     text-align: center;
     margin-top: 0.3rem;
-  }
-  
-  .gallery-btn {
-    background-color: #e7c385;
-    border: none;
-    padding: 0.75rem 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+.gallery-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: stretch;
+    background-color: #76885B;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
     font-weight: bold;
-    margin: 1rem auto;
-    display: block;
-    cursor: pointer;
-  }
-  
-  /* Footer */
-  .footer {
+    color: #F8F4EC;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+}
+
+.gallery {
+    border-bottom: 2px solid #E5C185;
+    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
     text-align: center;
-    background-color: #f4f4f4;
+    background-color: #1F2A44;
     padding: 1rem;
     font-size: 0.9rem;
-  }
-  
-  .footer a {
-    display: block;
+}
+
+footer p {
+    font-size: 1.5rem;
     margin-top: 0.5rem;
-    color: #1a1a1a;
-  }
-  
+    margin-bottom: 2rem;
+    color: #F8F4EC;
+}
+
+.footer a {
+    display: block;
+    background-color: #1F2A44;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    color: #E5C185;
+}
+
+/* MEDIA QUERY (medium) */
+@media (min-width: 768px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* MEDIA QUERY (large) */
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 7rem;
+    }
+
+    .navbar {
+        gap: 10rem;
+    }
+}
+
+/* MEDIA QUERY (xl) */
+@media (min-width: 1280px) {
+    .content {
+        padding: 2rem 4rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
